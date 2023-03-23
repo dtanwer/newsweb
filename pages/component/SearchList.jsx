@@ -1,12 +1,11 @@
 import React from 'react'
 
-export default function SearchList({result,setSearch}) {
-    console.log(result);
+export default function SearchList({result,setSearch,key}) {
   return (
     <div>
        <div
       className="search-result"
-      onClick={(e) =>setSearch(result)}
+      onClick={(e) =>setSearch(result)} key={key}
     >
       {result}
     </div>
