@@ -4,11 +4,11 @@ import NewsCard from './newsCard';
 const Posts = ({ posts}) => {
   return (
     <div>
-    <div class="container">
-          <div class="row">
+    <div className="container">
+          <div className="row">
         {posts.map(post =>(
-            <div class="col-sm-4">
-              <NewsCard post={post}/>
+            <div className="col-sm-4">
+              <NewsCard key={post.id} post={post}/>
             </div>
          ))}
          </div>

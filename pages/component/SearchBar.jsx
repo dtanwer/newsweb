@@ -41,12 +41,12 @@ export default function SearchBar() {
     }
     return (
         <div className='container text-center '>
-            <div class="input-group">
-                <div class="form-outline me-2">
-                    <input type="search" id="form1" value={search} onChange={handelchange} class="form-control" />
+            <div className="input-group">
+                <div className="form-outline me-2">
+                    <input type="search" id="form1" value={search} onChange={handelchange} className="form-control" />
                 </div>
-                <button onClick={sendData} type="button" class="btn btn-danger">
-                <i class="fa-solid fa-magnifying-glass"></i> Search
+                <button onClick={sendData} type="button" className="btn btn-danger">
+                <i className="fa-solid fa-magnifying-glass"></i> Search
                 </button>
             </div>
             <div className="results-list ">
